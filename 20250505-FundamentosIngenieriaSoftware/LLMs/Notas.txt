@@ -1,2 +1,17 @@
 La inteligencia artificial moderna ha evolucionado nuestra forma de procesar el lenguaje.
-Los grandes modelos(LLMs) funciona
+Los grandes modelos(LLMs) funcionan de manera similar a como nuestro cerebro completa frases
+automaticamente. cuando escuchamos "el gato maúlla y el perro ....", instintivamente "pensamo". 
+Este proceso, aparentemente simple, esconde complejos mecanismos matemáticos y computacionales que han
+permitido el desarrollo de sistemas como ChatGPT, llama y otros modelo avanzados.
+
+¿Como funcionan los grandes modelos de lenguaje?
+Los modelos de lenguaje modernos operan mediante un proceso sofisticado que comienza con la tokenización y culmina con sistemas de predicción basados
+en ateción. Este proceso permite que la inteligencia artificial comprenda y genere texto de manera coherente y contextual apropiada.
+
+Tokenización: dividendo el lenguaje en unidades básicas.
+El primer paso fundamental consiste en fragmentar todo el lenguaje humano en unidades más pequeñas llamadas "tokens".
+Estos pueden ser palabras compleatas, silabas o incluso letras individuales. Aunque podríamos pensar que las posibles combinaciones son infinitas, el
+lenguaje humano es sorprendentemente finito:
+
+- Los sistemas de traducción típicamente utilizando entre 40,000 50,000 tokens.
+- Los grandes modelos como GPT-4 pueden manejar hasta 256,000tokens en su vocabulario.
