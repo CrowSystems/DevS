@@ -1,0 +1,38 @@
+/*RESET*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1,
+h2 {
+    margin: 20px 0;
+}
+
+.box-model {
+    margin-bottom: 30px;
+}
+
+.content {
+    width: 200px;
+    padding: 20px;
+    border: 5px solid #3498db;
+    margin: 10px;
+    background-color: #e8f4f8;
+    text-align: center;
+}
+
+/* CONTENT-BOX VS BORDER-BOX */
+.content-box {
+    box-sizing: content-box; /*Default*/
+    width: 200px;
+    padding: 20px;
+    border: 5px solid red;
+    margin-bottom: 20px;
+    background: #ffe8e8;
+    /* Ancho total: 200 + 40 + 10 = 250px*/
+}
