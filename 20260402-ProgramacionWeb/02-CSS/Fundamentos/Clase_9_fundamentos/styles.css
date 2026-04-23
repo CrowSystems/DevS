@@ -1,0 +1,140 @@
+/*========================
+1- RESET BÁSICO
+========================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:  16px;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+/*========================
+2- TIPOGRAFÍA GENERAL
+========================== */
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color:#1a1a1a1a;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-top: 48px;
+}
+
+h3 {
+    font-size: 24px;
+    margin-top: 48px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+strong {
+    font-weight: bold;
+    color:#000000;
+}
+
+/*========================
+3. ENLACES
+========================== */
+a {
+    color: #2563EB;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1D4ED8;
+    text-decoration: none;
+}
+
+a:active {
+    color: #1E40AF;
+}
+
+/*========================
+4- LISTAS
+========================== */
+ul {
+    list-style: none;
+}
+
+/*========================
+5- HEADER
+========================== */
+
+.header {
+    background-color: #F8F9FA;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 24px 0;
+}
+
+.header_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header_brand {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.header_name {
+    color: #1A1A1A1A;
+    margin-bottom: 8px;
+}
+
+.header_tagline {
+    color: #666666;
+    margin-bottom: 8px;
+}
+
+/*========================
+6. NAVEGACIÓN
+========================== */
+.nav {
+    text-align: center;
+}
+
+.nav_list {
+    display: inline-block;
+}
+
+.nav_item {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.nav_link {
+    padding: 8px 12px;
+    display: inline-block;
+    color: #333333;
+    font-weight: 500;
+}
+
+.nav_link:hover {
+    color: #2563EB;
+    text-decoration: none;
+}
+
+.nav_link--active {
+    color: #2563EB;
+    text-decoration: none;
+}
