@@ -4,8 +4,10 @@ namespace Database\Seeders;
 
 use App\Models\Answer;
 use App\Models\Category;
+use App\Models\Comment;
 use App\Models\Question;
 use App\Models\User;
+
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Mockery\Matcher\Any;
@@ -26,26 +28,26 @@ class DatabaseSeeder extends Seeder
 
         $categories = Category::factory(4)->create();
 
-        $question = Question::factory(30)->create([
+        $questions = Question::factory(30)->create([
             'category_id'   => fn() => $categories->random()->id,
             'user_id'       => fn() => User::inRandomOrder()->first()->id,
         ]);
 
         $answers = Answer::factory(50)->create([
-            'question_id'   => fn() => $question->random()->id,
+            'question_id'   => fn() => $questions->random()->id,
             'user_id'       => fn() => User::inRandomOrder()->first()->id,
         ]);
 
         Comment::factory(100)->create([
             'user_id'               => fn() => User::inRandomOrder()->first()->id,
             'commentable_id'        => fn() => $answers->random()->id,
-            'comentable_type'       => fn() => Answer::class,
+            'commentable_type'       => fn() => Answer::class,
         ]);
 
         Comment::factory(100)->create([
             'user_id'               => fn() => User::inRandomOrder()->first()->id,
-            'commentable_id'        => fn() => $question->random()->id,
-            'comentable_type'       => fn() => Question::class,
+            'commentable_id'        => fn() => $questions->random()->id,
+            'commentable_type'       => fn() => Question::class,
         ]);
     }
 }

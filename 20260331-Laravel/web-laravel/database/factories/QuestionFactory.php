@@ -21,5 +21,5 @@ class QuestionFactory extends Factory
             'title' => fake()->sentence(),
             'description' => fake()->paragraph(),
         ];
-    }
+    } 
 }
