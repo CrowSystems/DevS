@@ -7,4 +7,12 @@ const Promise = new Promise((resolve, reject) => {
             reject("Fallo la operacion");
         }
     }, 2000);   
-})
+});
+
+promise
+    .then((successMessage)=> {
+        console.log(successMessage)
+    })
+    .catch((errorMessage) => {
+        console.log(errorMessage)
+    });
